@@ -173,8 +173,9 @@ async function constructResults()
 
 
 
-    const infoText = document.createElement('h3');
+    const infoText = document.createElement('span');
     infoText.textContent = "Based off your personality, below are some events we think you'll like!";
+    infoText.classList.add('resultsText');
     divQANDA.appendChild(infoText);
 
     const divEvents = document.createElement('div');
